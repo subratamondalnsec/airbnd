@@ -1,0 +1,272 @@
+.reviewsSection {
+  padding: 48px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.summaryHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.laurelRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.laurelRow img {
+  height: 88px;
+  width: auto;
+}
+
+.bigScore {
+  font-size: 96px;
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.guestFavLabel {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 12px;
+}
+
+.guestFavDesc {
+  font-size: 14px;
+  color: var(--color-secondary);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.howReviewsBtn {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ratingsGrid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.ratingCol {
+  flex: 1;
+  min-width: 120px;
+  max-width: 180px;
+}
+
+.ratingColLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.ratingBars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ratingBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.barStar {
+  font-size: 12px;
+  color: var(--color-primary);
+  width: 10px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.barTrack {
+  flex: 1;
+  height: 4px;
+  background: #ddd;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+
+.catScore {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.catIcon {
+  margin-top: 8px;
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  margin-bottom: 32px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 40px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary);
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.chip:hover {
+  background: var(--color-bg-hover);
+  border-color: #222;
+}
+
+.chipImg {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.chipCount {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.reviewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 48px;
+  margin-bottom: 32px;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.avatarInitial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.reviewerName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.reviewerMeta {
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.reviewMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+.reviewStars {
+  display: flex;
+  gap: 1px;
+  color: var(--color-primary);
+}
+
+.reviewText {
+  font-size: 15px;
+  color: var(--color-primary);
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.truncated {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.showMoreBtn {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.showAllReviewsBtn {
+  border: 1px solid var(--color-primary);
+  background: #fff;
+  border-radius: 8px;
+  padding: 13px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.showAllReviewsBtn:hover {
+  background: var(--color-bg-hover);
+}

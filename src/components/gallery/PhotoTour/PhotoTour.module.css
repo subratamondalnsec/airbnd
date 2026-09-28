@@ -1,0 +1,220 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.tourBar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 64px;
+  z-index: 20;
+  flex-shrink: 0;
+}
+
+.tourTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  color: var(--color-primary);
+}
+
+.iconBtn:hover {
+  background: var(--color-bg-hover);
+}
+
+.backBtn {
+  width: 32px;
+  height: 32px;
+}
+
+.btnIcon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 80px;
+  scroll-behavior: smooth;
+}
+
+.tourNav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px 12px;
+  padding: 32px 24px 48px;
+  max-width: 964px; /* Perfectly fits 8 items to force wrap on the 9th */
+  margin: 0 auto;
+}
+
+.navBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  width: 104px;
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+
+.navBtn img {
+  width: 104px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+.navBtn:hover img {
+  opacity: 0.85;
+}
+
+.navLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: left;
+  line-height: 1.2;
+}
+
+.tourRooms {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0 24px;
+}
+
+.roomSection {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 64px;
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 900px) {
+  .roomSection {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.roomInfo {
+  position: sticky;
+  top: 88px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.roomName {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1.3;
+}
+
+.roomFeatures {
+  font-size: 14px;
+  color: var(--color-secondary);
+  line-height: 1.4;
+}
+
+.roomImages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.imageSlot {
+  width: 100%;
+}
+
+.imageSlot.wide .imageBtn {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.imageSlot.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.imageSlot.pair .imageBtn {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.imageBtn {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: #f7f7f7;
+  position: relative;
+}
+
+.imageBtn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imageBtn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.2s ease;
+  pointer-events: none;
+}
+
+.imageBtn:hover::after {
+  background: rgba(0, 0, 0, 0.15);
+}

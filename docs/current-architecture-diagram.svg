@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568"/>
+    </marker>
+    <marker id="arrowhead_dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9ca3af"/>
+    </marker>
+  </defs>
+  <text x="600" y="40" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">Current Architecture — Frontend Implementation</text>
+  <text x="600" y="65" font-size="12" font-weight="normal" fill="#64748b" text-anchor="middle">This diagram represents the actual implemented React frontend structure.</text>
+  <text x="600" y="80" font-size="12" font-weight="normal" fill="#64748b" text-anchor="middle">No production backend, database, or API infrastructure is implemented in this take-home.</text>
+  <rect x="100" y="120" width="1000" height="100" fill="none" stroke="#e2e8f0" stroke-width="2" rx="12"/>
+  <rect x="100" y="120" width="1000" height="100" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 6" rx="12"/>
+  <rect x="120" y="110" width="136" height="20" fill="#ffffff"/>
+  <text x="188.0" y="124" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">APP SHELL &amp; ENTRY</text>
+  <rect x="300" y="150" width="140" height="40" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2" rx="8"/>
+  <text x="370.0" y="175.0" font-size="14" font-weight="500" fill="#1e293b" text-anchor="middle">index.html</text>
+  <path d="M 440 170 L 500 170" style="stroke: #4a5568; stroke-width: 2; fill: none; marker-end: url(#arrowhead);"/>
+  <rect x="500" y="150" width="140" height="40" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2" rx="8"/>
+  <text x="570.0" y="175.0" font-size="14" font-weight="500" fill="#1e293b" text-anchor="middle">src/main.jsx</text>
+  <path d="M 640 170 L 700 170" style="stroke: #4a5568; stroke-width: 2; fill: none; marker-end: url(#arrowhead);"/>
+  <rect x="700" y="150" width="140" height="40" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="2" rx="8"/>
+  <text x="770.0" y="175.0" font-size="14" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;App /&gt;</text>
+  <path d="M 770 190 L 770 240" style="stroke: #4a5568; stroke-width: 2; fill: none; marker-end: url(#arrowhead);"/>
+  <rect x="300" y="240" width="600" height="100" fill="none" stroke="#e2e8f0" stroke-width="2" rx="12"/>
+  <rect x="300" y="240" width="600" height="100" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 6" rx="12"/>
+  <rect x="320" y="230" width="88" height="20" fill="#ffffff"/>
+  <text x="364.0" y="244" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">PAGE LAYOUT</text>
+  <rect x="350" y="270" width="200" height="40" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="450.0" y="295.0" font-size="14" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;Header /&gt; (layout)</text>
+  <rect x="650" y="270" width="200" height="40" fill="#faf5ff" stroke="#e9d5ff" stroke-width="2" rx="8"/>
+  <text x="750.0" y="295.0" font-size="14" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;ListingPage /&gt; (pages)</text>
+  <path d="M 750 310 L 750 360" style="stroke: #4a5568; stroke-width: 2; fill: none; marker-end: url(#arrowhead);"/>
+  <rect x="100" y="360" width="1000" height="200" fill="none" stroke="#e2e8f0" stroke-width="2" rx="12"/>
+  <rect x="100" y="360" width="1000" height="200" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 6" rx="12"/>
+  <rect x="120" y="350" width="256" height="20" fill="#ffffff"/>
+  <text x="248.0" y="364" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">FEATURE DOMAINS (src/components)</text>
+  <rect x="150" y="400" width="180" height="35" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="240.0" y="422.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;ListingGallery /&gt;</text>
+  <rect x="150" y="450" width="180" height="35" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="240.0" y="472.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;PhotoTour /&gt;</text>
+  <rect x="150" y="500" width="180" height="35" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="240.0" y="522.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;Lightbox /&gt;</text>
+  <text x="240" y="390" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">Gallery Domain</text>
+  <rect x="400" y="400" width="180" height="35" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="490.0" y="422.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;Amenities /&gt;</text>
+  <rect x="400" y="450" width="180" height="35" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="490.0" y="472.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;Reviews /&gt;</text>
+  <rect x="400" y="500" width="180" height="35" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="490.0" y="522.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;NearbyListings /&gt;</text>
+  <text x="490" y="390" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">Listing Details</text>
+  <rect x="650" y="400" width="180" height="35" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="740.0" y="422.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;BookingCard /&gt;</text>
+  <text x="740" y="390" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">Booking Domain</text>
+  <rect x="880" y="400" width="180" height="35" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="8"/>
+  <text x="970.0" y="422.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">&lt;StarIcon /&gt;, Modals...</text>
+  <text x="970" y="390" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">Shared UI</text>
+  <path d="M 750 310 L 750 355.0 L 240 355.0 L 240 400" style="stroke: #4a5568; stroke-width: 2; fill: none; marker-end: url(#arrowhead);"/>
+  <path d="M 750 310 L 750 355.0 L 490 355.0 L 490 400" style="stroke: #4a5568; stroke-width: 2; fill: none; marker-end: url(#arrowhead);"/>
+  <path d="M 750 310 L 750 355.0 L 740 355.0 L 740 400" style="stroke: #4a5568; stroke-width: 2; fill: none; marker-end: url(#arrowhead);"/>
+  <rect x="100" y="620" width="1000" height="160" fill="none" stroke="#e2e8f0" stroke-width="2" rx="12"/>
+  <rect x="100" y="620" width="1000" height="160" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 6" rx="12"/>
+  <rect x="120" y="610" width="256" height="20" fill="#ffffff"/>
+  <text x="248.0" y="624" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">LOCAL STATE, HOOKS &amp; STATIC DATA</text>
+  <rect x="150" y="660" width="180" height="35" fill="#fffbeb" stroke="#fde68a" stroke-width="2" rx="8"/>
+  <text x="240.0" y="682.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">useLightbox()</text>
+  <rect x="150" y="710" width="180" height="35" fill="#fffbeb" stroke="#fde68a" stroke-width="2" rx="8"/>
+  <text x="240.0" y="732.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">useBodyScrollLock()</text>
+  <rect x="350" y="660" width="180" height="35" fill="#fffbeb" stroke="#fde68a" stroke-width="2" rx="8"/>
+  <text x="440.0" y="682.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">useKeyboardNavigation()</text>
+  <text x="340" y="650" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">Custom Interaction Hooks</text>
+  <rect x="650" y="660" width="120" height="35" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="2" rx="8"/>
+  <text x="710.0" y="682.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">listing.js</text>
+  <rect x="650" y="710" width="120" height="35" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="2" rx="8"/>
+  <text x="710.0" y="732.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">gallery.js</text>
+  <rect x="790" y="660" width="120" height="35" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="2" rx="8"/>
+  <text x="850.0" y="682.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">amenities.js</text>
+  <rect x="790" y="710" width="120" height="35" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="2" rx="8"/>
+  <text x="850.0" y="732.5" font-size="13" font-weight="500" fill="#1e293b" text-anchor="middle">reviews.js</text>
+  <text x="780" y="650" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">src/data/ (Local Static Data)</text>
+  <path d="M 240 535 L 240 660" style="stroke: #9ca3af; stroke-width: 2; fill: none; stroke-dasharray: 5 5; marker-end: url(#arrowhead_dashed);"/>
+  <path d="M 490 535 L 710 660" style="stroke: #9ca3af; stroke-width: 2; fill: none; stroke-dasharray: 5 5; marker-end: url(#arrowhead_dashed);"/>
+  <path d="M 740 435 L 850 660" style="stroke: #9ca3af; stroke-width: 2; fill: none; stroke-dasharray: 5 5; marker-end: url(#arrowhead_dashed);"/>
+</svg>

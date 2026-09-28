@@ -1,0 +1,164 @@
+.header {
+  position: relative;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: var(--color-rose);
+  flex-shrink: 0;
+}
+
+.logoRose {
+  color: #ff385c;
+  display: block;
+}
+
+.searchBar {
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 40px;
+  padding: 0 6px 0 16px;
+  height: 48px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s;
+}
+
+.searchBar:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.searchBtn {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  white-space: nowrap;
+  padding: 0 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  line-height: 1;
+}
+
+.searchBtn:hover {
+  background: var(--color-bg-hover);
+  border-radius: 40px;
+}
+
+.searchBtnGuests {
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
+.searchDivider {
+  width: 1px;
+  height: 24px;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+.houseIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.searchSubmit {
+  width: 32px;
+  height: 32px;
+  background: var(--color-rose);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 6px;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.searchSubmit:hover {
+  background: var(--color-rose-dark);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.becomeHost {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 40px;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.becomeHost:hover {
+  background: var(--color-bg-hover);
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-primary);
+  transition: background 0.15s;
+}
+
+.iconBtn:hover {
+  background: var(--color-bg-hover);
+}
+
+.menuBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s;
+}
+
+.menuBtn:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+  background: #fff;
+}
+
+.menuIcon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+

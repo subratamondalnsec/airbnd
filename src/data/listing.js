@@ -1,0 +1,81 @@
+export const listing = {
+  title: "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10",
+  type: "Entire serviced apartment in Candolim, India",
+  guests: 3,
+  bedrooms: 1,
+  beds: 1,
+  baths: 1,
+  rating: 4.95,
+  reviewCount: 19,
+  location: "Candolim, Goa, India",
+  priceForNights: "₹28,499",
+  nights: 5,
+  checkin: "10/18/2026",
+  checkout: "10/23/2026",
+  guestCount: "2 guests",
+  description:
+    "🌴 Plan Your Relaxing Holiday at Amor De Goa by Mirashya Homes! ✨ Stay in this cozy 1BHK in the heart of Candolim, featuring a private jacuzzi 🛁 for the perfect unwind. Enjoy high-speed WiFi 💻, Smart TV 📺, pet-friendly comfort 🐾, and stylish interiors. Just minutes from Candolim Beach 🏖️, popular cafés, restaurants, and nightlife 🍹, it's ideal for couples seeking romance, relaxation, and a touch of luxury in North Goa. ❤️🌴",
+  host: {
+    name: "Mirashya Homes",
+    avatar: "/images/avatars/host.jpeg",
+    yearsHosting: 2,
+    totalReviews: 1463,
+    rating: 4.68,
+    bornIn: "Born in the 80s",
+    school: "Where I went to school: NICMAR GOA",
+    responseRate: "100%",
+    responseTime: "Responds within an hour",
+  },
+  coHosts: [
+    { name: "Sharath", avatar: "/images/avatars/co1.jpg" },
+    { name: "Aman Dev Pahwa", avatar: "/images/avatars/co2.jpg" },
+    { name: "Maria Karen Priyanka", avatar: "/images/avatars/co3.jpg" },
+    { name: "Simran", avatar: "/images/avatars/rev5.jpeg" },
+    { name: "Pallavi", avatar: "/images/avatars/rev1.jpeg" },
+    { name: "Sanyukta", avatar: "/images/avatars/rev2.jpeg" },
+    { name: "Shruti", initials: "S", bg: "rgb(253, 231, 239)", color: "rgb(212, 53, 110)" },
+    { name: "Amisha", initials: "A", bg: "rgb(231, 240, 253)", color: "rgb(58, 110, 204)" },
+  ],
+  highlights: [
+    {
+      title: "Outdoor entertainment",
+      description: "The pool and alfresco dining are great for summer trips.",
+      icon: "outdoor",
+    },
+    {
+      title: "Designed for staying cool",
+      description: "Beat the heat with the A/C and ceiling fan.",
+      icon: "cool",
+    },
+    {
+      title: "Self check-in",
+      description: "You can check in with the building staff.",
+      icon: "selfcheckin",
+    },
+  ],
+  sleepingArrangements: [
+    { room: "Bedroom", bedType: "1 double bed", image: "/images/67c61c6f-6260-4809-9510-0360e58a345d.jpeg" },
+    { room: "Living room", bedType: "1 sofa", image: "/images/a9831aeb-f441-44f5-a38f-4cf54e3f0fcf.jpeg" },
+  ],
+  heroImages: [
+    "/images/2367476f-11c4-4a14-a7c6-267be62c1d59.jpeg",
+    "/images/090d8b0b-b539-42c0-84f8-e1fb0cdf9a93.jpeg",
+    "/images/9be71047-fc52-438a-9270-75cb470f6752.jpeg",
+    "/images/67c61c6f-6260-4809-9510-0360e58a345d.jpeg",
+    "/images/c904e1ab-a39d-4ef0-bdea-8c0bd16b9e3d.jpeg",
+  ],
+  neighborhoodInfo:
+    "Located in the heart of Candolim, Amor de Goa offers a peaceful stay with easy access to beaches, cafés, and popular attractions.",
+  cancellationPolicy:
+    "Free cancellation before 17 October. Cancel before check-in on 18 October for a partial refund.",
+  houseRules: [
+    "Check-in after 2:00 pm",
+    "Checkout before 11:00 am",
+    "3 guests maximum",
+  ],
+  safetyInfo: [
+    "Carbon monoxide alarm not reported",
+    "Smoke alarm not reported",
+    "Exterior security cameras on property",
+  ],
+};
